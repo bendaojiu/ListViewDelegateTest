@@ -1,6 +1,8 @@
 #include "widget.h"
 #include "ui_widget.h"
 
+#include "def.h"
+
 Widget::Widget(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::Widget)
@@ -16,11 +18,6 @@ Widget::~Widget()
 //    {
 //        delete m_listWidget;
 //    }
-}
-
-void Widget::closeEvent(QCloseEvent *event)
-{
-    this->deleteLater();
 }
 
 
