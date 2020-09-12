@@ -1,0 +1,1 @@
+可以获取QListView的windowFlags和testAttribute，输出QFlags<Qt::WindowType>(WindowTitleHint|WindowSystemMenuHint|WindowMinMaxButtonsHint|WindowCloseButtonHint|WindowFullscreenButtonHint) false
