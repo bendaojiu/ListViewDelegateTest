@@ -8,3 +8,7 @@ widget和listview中的scrollarea都不是WA_Hover的，而且也没进入那个
               QCommonListViewBase::viewOptions->
               QAbstractItemViewPrivate::viewOptionsV1->QListView::viewOptions->
               QAbstractItemView::viewOptions->QStyleOption::init
+
+
+mouseMoveEvent 设置的地方 qlistview.cpp 的 paintEvent 
+         option.state.setFlag(QStyle::State_MouseOver, *it == hover);

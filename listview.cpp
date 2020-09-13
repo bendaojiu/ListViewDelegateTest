@@ -15,7 +15,7 @@ ListView::ListView(QWidget *parent)
     setItemDelegate(m_delegate);
 
     setMouseTracking(true);
-//    setAttribute(Qt::WA_Hover, true);
+    setAttribute(Qt::WA_Hover, false);
 
 }
 
@@ -27,9 +27,6 @@ ListView::~ListView()
 
 void ListView::mouseMoveEvent(QMouseEvent *e)
 {
-//    qDebug() << viewport()->windowFlags() << viewport()->testAttribute(Qt::WA_Hover);
-//    qDebug() << windowFlags() << testAttribute(Qt::WA_Hover);
-//    qDebug() << e->type();
     QListView::mouseMoveEvent(e);
 }
 

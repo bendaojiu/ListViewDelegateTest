@@ -20,7 +20,6 @@ QModelIndex ListModel::parent(const QModelIndex &child) const
 
 int ListModel::rowCount(const QModelIndex &parent) const
 {
-    qDebug() << "ListModel::rowCount" << m_strList.size();
     return m_strList.size();
 }
 

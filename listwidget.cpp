@@ -12,5 +12,5 @@ ListWidget::ListWidget(QWidget *parent) : QWidget(parent)
     layout->addWidget(label);
     layout->addWidget(m_listView);
 
-    setWindowFlags(Qt::FramelessWindowHint | Qt::Tool | Qt::X11BypassWindowManagerHint);
+//    setWindowFlags(Qt::FramelessWindowHint | Qt::Tool | Qt::X11BypassWindowManagerHint);
 }
