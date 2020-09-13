@@ -13,6 +13,10 @@ eachHeight = 30;
 void ListDelegate::paint(QPainter *painter, const QStyleOptionViewItem &option, const QModelIndex &index) const
 {
     DEBUG(option.state) << DEBUGINFO(index.row());
+    if (option.state & QStyle::State_MouseOver)
+    {
+        qDebug() << "has";
+    }
 //    painter->save();
 //    QPen p(Qt::red);
 //    p.setWidth(5);
